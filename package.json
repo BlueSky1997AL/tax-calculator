@@ -1,0 +1,39 @@
+{
+    "name": "tax_calculator",
+    "version": "0.0.1",
+    "description": "New personal income tax calculation API (in China)",
+    "main": "out/index.js",
+    "scripts": {
+        "build-watch": "tsc --watch",
+        "build": "echo 'Removing old files ...\n' && rm -rvf out && tsc && echo '\nBuild complete.'",
+        "start": "npm run build && node .",
+        "dev": "npm run build-watch & nodemon ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BlueSky1997AL/tax-calculator.git"
+    },
+    "keywords": [
+        "tax",
+        "china",
+        "calculator",
+        "API",
+        "new"
+    ],
+    "author": "Allen Lawrence",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BlueSky1997AL/tax-calculator/issues"
+    },
+    "homepage": "https://github.com/BlueSky1997AL/tax-calculator#readme",
+    "devDependencies": {
+        "@types/express": "^4.16.0",
+        "@types/node": "^10.9.4",
+        "nodemon": "^1.18.4",
+        "typescript": "^3.0.3"
+    },
+    "dependencies": {
+        "chalk": "^2.4.1",
+        "express": "^4.16.3"
+    }
+}
